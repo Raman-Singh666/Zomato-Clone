@@ -10,15 +10,6 @@ const Router = express.Router();
 
 /**
  * Route     /
- * Des       Create new restaurant
- * Params    none
- * Access    Public
- * Method    POST
- */
-// Homework
-
-/**
- * Route     /
  * Des       Get all the restuarant details based on the city
  * Params    none
  * Access    Public
@@ -73,15 +64,7 @@ Router.get("/:_id", async (req, res) => {
  * Method    GET
  */
 Router.get("/search/:searchString", async (req, res) => {
-  /**
-   * searchString = Raj
-   * results = {
-   *  RajHotel
-   *  RajRow
-   *  RonRaj
-   *  raJRow
-   * }
-   */
+
   try {
     const { searchString } = req.params;
 

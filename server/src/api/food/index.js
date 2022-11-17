@@ -10,15 +10,6 @@ const Router = express.Router();
 
 /**
  * Route     /:_id
- * Des       Create New Food Item
- * Params    none
- * Access    Public
- * Method    POST
- */
-// Homework
-
-/**
- * Route     /:_id
  * Des       Get food based on id
  * Params    _id
  * Access    Public
@@ -53,8 +44,6 @@ Router.get("/r/:_id", async (req, res) => {
     const foods = await FoodModel.find({
       restaurant: _id,
     });
-
-    // task: food not found return stmt
 
     return res.json({ foods });
   } catch (error) {
